@@ -1,1 +1,1 @@
-web: gunicorn caravanapp.wsgi --log-file -
+web: gunicorn caravanasite.wsgi --log-file -
