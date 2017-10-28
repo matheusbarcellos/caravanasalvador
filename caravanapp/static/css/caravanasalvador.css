@@ -8,6 +8,11 @@ body {
   color: #5a5a5a;
 }
 
+.btn {
+  background-color: #059bff;
+  border-color: #059bff;
+}
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -40,13 +45,15 @@ body {
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 5rem;
   text-align: center;
 }
 .marketing h2 {
+  margin-top: 1rem;
   font-weight: 400;
 }
 .marketing .col-lg-4 p {
+  margin-top: 0.75rem;
   margin-right: .75rem;
   margin-left: .75rem;
 }

@@ -17,12 +17,10 @@
 
     <header id="page-top">
       <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #FFFFFF;">
-        <div style="border-right:1px solid; color:#808080">
-          <a class="navbar-brand js-scroll-trigger" href="#page-top" style="margin-right: 0px; padding-right: 8px;">
-            <img src="{% static 'img/favicon.png' %}" width="30" height="30" class="d-inline-block align-top" alt="">
-            Caravana Salvador
-          </a>
-        </div>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top" style="margin-right: 2rem; padding-right: 8px;">
+          <img src="{% static 'img/favicon.png' %}" width="30" height="30" class="d-inline-block align-top" alt="">
+          Caravana Salvador
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -32,10 +30,10 @@
               <a class="nav-link js-scroll-trigger" href="#inscricao">Inscrição</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#galeria">Galeria</a>
+              <a class="nav-link js-scroll-trigger" href="#sobre">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#sobre">Sobre</a>
+              <a class="nav-link js-scroll-trigger" href="#galeria">Galeria</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="http://brasil.campus-party.org/" target="_blank">CPBR11</a>
@@ -49,6 +47,8 @@
     </header>
 
     <main role="main">
+
+      <!--Carousel -->
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -57,32 +57,32 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+            <img class="first-slide" src="{% static 'img/heading12.jpg' %}" alt="Inscrição">
             <div class="container">
               <div class="carousel-caption text-left">
-                <h1>Example headline.</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                <h1>Inscreva-se!</h1>
+                <p><b>Para participar é bem simples.</b></p>
+                <p><a class="btn btn-lg btn-primary js-scroll-trigger" href="#inscricao" role="button">Saiba mais</a></p>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+            <img class="second-slide" src="{% static 'img/heading2.jpg' %}" alt="Sobre">
             <div class="container">
               <div class="carousel-caption text-right">
-                <h1>One more for good measure.</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                <h1>Por que se juntar a nós?</h1>
+                <p><b>Entenda os benefícios de participar de uma caravana.</b><p>
+                  <a class="btn btn-lg btn-primary js-scroll-trigger" href="#sobre" role="button">Conheça</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="third-slide" src="{% static 'img/heading3.jpg' %}" alt="Galeria">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Conheça a caravana!</h1>
+                <p><b>Veja as fotos da caravana de 2013.</b></p>
+                <p><a class="btn btn-lg btn-primary js-scroll-trigger" href="#galeria" role="button">Galeria</a></p>
               </div>
             </div>
           </div>
@@ -98,35 +98,33 @@
       </div>
 
 
-      <!-- Marketing messaging and featurettes
-      ================================================== -->
-      <!-- Wrap the rest of the page in another container to center all the content. -->
-
+      <!-- Marketing messaging-->
       <div class="container marketing">
 
         <!-- Three columns of text below the carousel -->
         <div class="row">
           <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            <img class="rounded-circle" src="{% static 'img/roundedCircle1.png' %}" alt="Inscrição" width="140" height="140">
+            <h2>Inscrição</h2>
+            <p>Para fazer parte da Caravana Salvador basta preencher um formulário de inscrição.</p>
+            <p><a class="btn btn-secondary js-scroll-trigger" href="#inscricao" role="button">Saiba mais</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            <img class="rounded-circle" src="{% static 'img/roundedCircle2.png' %}" alt="Sobre" 140" height="140">
+            <h2>Sobre</h2>
+            <p>Participar de uma caravana contribui para uma Campus mais tranquila.</p>
+            <p><a class="btn btn-secondary js-scroll-trigger" href="#" role="button">Conheça</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            <img class="rounded-circle" src="{% static 'img/roundedCircle3.png' %}" alt="Generic placeholder image" width="140" height="140">
+            <h2>Galeria</h2>
+            <p>Alguns membros antigos já confirmaram presença na Caravana Salvador 2017.</p>
+            <p><a class="btn btn-secondary js-scroll-trigger" href="#" role="button">Galeria</a></p>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
       </div><!-- /.container -->
 
+      <!-- Section -->
       <section id="inscricao">
         <div class="container">
           <div class="row">
@@ -144,14 +142,15 @@
         </div>
       </section>
 
-      <!-- FOOTER -->
+      <!-- Footer -->
       <footer class="py-5 bg-dark">
         <div class="container">
           <p class="m-0 text-center text-white">Copyright &copy; Caravana Salvador 2017</p>
         </div>
-        <!-- /.container -->
       </footer>
-    </main>      
+
+    </main>
+
     <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
     <script src="{% static 'js/popper.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
