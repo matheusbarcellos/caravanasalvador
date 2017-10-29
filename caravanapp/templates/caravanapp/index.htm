@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Matheus R. Barcellos">
     <link rel="icon" href="{% static 'img/favicon.png' %}">
-    <title>Caravana Salvador - CPBR11</title>
+    <title>Caravana Salvador 2018</title>
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/caravanasalvador.css' %}">
   </head>
@@ -36,7 +36,7 @@
               <a class="nav-link js-scroll-trigger" href="#galeria">Galeria</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="http://brasil.campus-party.org/" target="_blank">CPBR11</a>
+              <a class="nav-link" href="http://brasil.campus-party.org/campus-party/ingressos/" target="_blank">CPBR11</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="http://campuse.ro/" target="_blank">Campuse.ro</a>
@@ -81,7 +81,7 @@
             <div class="container">
               <div class="carousel-caption">
                 <h1>Conheça a caravana!</h1>
-                <p><b>Veja as fotos da caravana de 2013.</b></p>
+                <br />
                 <p><a class="btn btn-lg btn-primary js-scroll-trigger" href="#galeria" role="button">Galeria</a></p>
               </div>
             </div>
@@ -113,39 +113,130 @@
             <img class="rounded-circle" src="{% static 'img/roundedCircle2.png' %}" alt="Sobre" 140" height="140">
             <h2>Sobre</h2>
             <p>Participar de uma caravana contribui para uma Campus mais tranquila.</p>
-            <p><a class="btn btn-secondary js-scroll-trigger" href="#" role="button">Conheça</a></p>
+            <p><a class="btn btn-secondary js-scroll-trigger" href="#sobre" role="button">Conheça</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <img class="rounded-circle" src="{% static 'img/roundedCircle3.png' %}" alt="Generic placeholder image" width="140" height="140">
             <h2>Galeria</h2>
-            <p>Alguns membros antigos já confirmaram presença na Caravana Salvador 2017.</p>
-            <p><a class="btn btn-secondary js-scroll-trigger" href="#" role="button">Galeria</a></p>
+            <p>Reviva conosco alguns momentos importantes da história da caravana.</p>
+            <p><a class="btn btn-secondary js-scroll-trigger" href="#galeria" roe=l"button">Galeria</a></p>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
-      </div><!-- /.container -->
 
-      <!-- Section -->
-      <section id="inscricao">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2>About this page</h2>
-              <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
-              <ul>
-                <li>Clickable nav links that smooth scroll to page sections</li>
-                <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-                <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-                <li>Minimal custom CSS so you are free to explore your own unique design options</li>
-              </ul>
+        <hr class="featurette-divider">
+
+        <!-- Section -->
+        <section id="inscricao">
+          <div class="row featurette">
+            <div class="col-md-6">
+              <h2 class="featurette-heading">Inscrição</h2>
+              <p class="lead" align="justify">Se você quer se juntar a nós e tornar a sua experiência na CPBR11 ainda melhor, esse é o lugar certo. Conforme a equipe de organização das caravanas da CPBR11, todos os integrantes precisam fornecer o seu nome completo, o email cadastrado no campuse.ro e um número de telefone. Então, basta preencher esse formulário com essas informações que você passará a fazer parte da Caravana Salvador.</p>
+              <a class="btn btn-secondary" id="button-inscricao" href="https://goo.gl/forms/1pLfNNXjArMXcw2d2" role="button" target="_blank">Realizar Inscrição</a>
+            </div>
+            <div class="col-md-6">
+              <p id="googlesheet-title" class="lead" align="center">Membros Cadastrados para 2018</p>
+              <div class="embed-responsive embed-responsive-4by3" style="max-height: 17rem; ">
+                <iframe class="embed-responsive-item" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSn2vkP5ao90vh1OuIK9ezxDWWTvwWVYzUbBaZOYOT_kqr3xOSnfKEIufx8Aw6SGBCWz2KCAjeqdirK/pubhtml?gid=1905399262&amp;single=true&amp;headers=false&amp;widget=false&amp;chrome=false"></iframe>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        <hr class="featurette-divider">
+
+        <!-- Section -->
+        <section id="sobre">
+          <div class="row featurette">
+            <div id="only-col">
+              <h2 class="featurette-heading">Sobre</h2>
+              <p class="lead" align="justify">A Caravana Salvador surgiu em 2013, com o intuito de reunir alguns amigos de Salvador com destino a CPBR7, em 2014. Nosso líder, <a href="https://www.facebook.com/matheus.barcellos.7359" target="_blank">Matheus Romão Barcellos</a>, já era veterano da Campus Party e organizou um grupo no facebook, que na época foi o meio de comunicação para compartilhamento das informações. Com tudo acertado, a caravana partiu para CPBR7 com 40 integrantes. Em 2014, Romão foi morar nos EUA e a Caravana Salvador não compareceu em outras edições da CPBR. Até que em 2017, muitos integrantes veteranos se encontraram na CPBA, reacendendo a vontade de reviver a Caravana Salvador.</p> 
+            </div>
+            <div class="col-md-6">
+              <table class="table">
+                <thead class="thead-light">
+                  <tr>
+                    <th>Modalidade de Compra</th>
+                    <th>Ingresso </th>
+                    <th>Ingresso + Camping Individual</th>
+                    <th> Ingresso + Camping Duplo</th> 
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Caravana <br /> (até 14/12)</td>
+                    <td>R$ 220,00</td>
+                    <td>R$ 290,00</td>
+                    <td>R$ 260,00</td>
+                  </tr>
+                  <tr>
+                    <td>1° Lote <br /> (até 09/11)</td>
+                    <td>R$ 270,00</td>
+                    <td>R$ 340,00</td>
+                    <td>R$ 310,00</td>
+                  </tr>
+                  <tr>
+                    <td>2° Lote <br /> (a partir de 10/11)</td>
+                    <td>R$ 320,00</td>
+                    <td>R$ 390,00</td>
+                    <td>R$ 360,00</td>
+                  </tr>
+                  <tr><td></td><td></td><td></td><td></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-6">
+              <p class="lead" align="justify"> Um dos maiores benefícios de participar da caravana é a possibilidade de comprar o ingresso pelo preço da pré-venda. Além disso, é possível entrar um dia antes do evento começar (dia 29/01), enquanto a entrada dos outros campuseiros é no dia 30/01. Outra vantagem é que a caravana tem acesso a uma bancada reservada, deixando os integrantes mais a vontade. Por último, e talvez o mais importante, ir com uma caravana torna a campus mais tranquila, porque a pessoa pode sempre contar com alguém para te ajudar, além do compartilhamento das informações sobre o que está acontecendo por todo o evento.</p>
+            </div>
+          </div>
+        </section>
+
+        <hr class="featurette-divider">
+
+        <!-- Section -->
+        <section id="galeria">
+          <div class="row featurette">
+            <div class="col-md-12">
+              <h2 class="featurette-heading">Galeria de Fotos</h2>
+            </div>
+          </div>
+          <div class="album text-muted">
+            <div class="container">
+              <div class="row">
+                <div class="card">
+                  <img class="card-img-top img-responsive" src="{% static 'img/galeria/1.jpg' %}" alt="Card image cap">
+                  <p class="card-text text-center">Uma parte dos integrantes da Caravana Salvador para CPBR7.</p>
+                </div>
+                <div class="card">
+                  <img class="card-img-top img-responsive" src="{% static 'img/galeria/2.jpg' %}" alt="Card image cap">
+                  <p class="card-text text-center">Bancada reservada para a Caravana Salvador na CPBR7.</p>
+                </div>
+                <div class="card">
+                  <img class="card-img-top img-responsive" src="{% static 'img/galeria/3.jpg' %}" alt="Card image cap">
+                  <p class="card-text text-center">Momento "jogatina" durante a madrugada.</p>
+                </div>
+
+                <div class="card">
+                  <img class="card-img-top img-responsive" src="{% static 'img/galeria/4.jpg' %}" alt="Card image cap">
+                  <p class="card-text text-center">Alguns projetos foram aprensentados na CPBR7 por integrantes da Caravana Salvador.</p>
+                </div>
+                <div class="card">
+                  <img class="card-img-top img-responsive" src="{% static 'img/galeria/5.jpg' %}" alt="Card image cap">
+                  <p class="card-text text-center">Cantinho do líder, momentos antes da apresentação de um projeto.</p>
+                </div>
+                <div class="card">
+                  <img class="card-img-top img-responsive" src="{% static 'img/galeria/6.jpg' %}" alt="Card image cap">
+                  <p class="card-text text-center">Caravana Salvador na CPBA 2017.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div><!-- /.container -->
 
       <!-- Footer -->
-      <footer class="py-5 bg-dark">
+      <footer class="py-3 bg-dark">
         <div class="container">
-          <p class="m-0 text-center text-white">Copyright &copy; Caravana Salvador 2017</p>
+          <p class="m-0 text-center text-white">Caravana Salvador 2018</p>
         </div>
       </footer>
 
